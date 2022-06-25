@@ -1,0 +1,45 @@
+{
+    "name": "travel-vue",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build --dest ../travelnet-node/src/public --no-clean && rsync -ru ../travelnet-node/src/public/* root@wbox.cloud:/var/www/html/travelnet-node/src/public"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.4.4",
+        "@mdi/font": "5.9.55",
+        "animate.css": "^4.1.1",
+        "axios": "^0.25.0",
+        "bootstrap": "^4.6.0",
+        "bootstrap-vue": "^2.21.2",
+        "chart.js": "^2.9.4",
+        "clipboard": "^2.0.8",
+        "core-js": "^3.20.3",
+        "html2canvas": "^1.4.1",
+        "jspdf": "^2.5.0",
+        "luxon": "^1.26.0",
+        "moment": "^2.29.1",
+        "roboto-fontface": "*",
+        "secure-ls": "^1.2.6",
+        "v-calendar": "^2.3.4",
+        "vue": "^2.6.11",
+        "vue-chartjs": "^3.5.1",
+        "vue-cropper": "^0.5.8",
+        "vue-router": "^3.2.0",
+        "vue2-datepicker": "^3.10.3",
+        "vue2-google-maps": "^0.10.7",
+        "vuetify": "^2.4.0",
+        "vuex": "^3.4.0",
+        "vuex-persistedstate": "^4.0.0-beta.3"
+    },
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.3",
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-router": "~4.5.0",
+        "@vue/cli-plugin-vuex": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "vue-cli-plugin-vuetify": "~2.3.1",
+        "vue-template-compiler": "^2.6.11"
+    }
+}
